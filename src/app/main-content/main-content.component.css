@@ -1,16 +1,18 @@
 .main-container-grid {
     display: grid;
     grid-template-columns: 1fr 6fr 2fr;
-    background-color: #3d423c;
-    height: 100%;
+    background-color: #FFF;
+    height: 50%;
+    width: 50%;
+
   }
 .table-one{
   width: 100%;
-  border: 1px solid #CCC
+  border: 1px solid #FFF
 }
 
 .table-one > tbody > tr > td {
-  border: 1px solid #CCC;
+  border: 1px solid #FFF;
   min-height: 50px;
   padding: .5em; 
   

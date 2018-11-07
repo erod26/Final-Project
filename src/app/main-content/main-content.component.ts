@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-interface IStudent {
-  id?:number;
-  firstName: string;
-  lastName: string;
-  course: string;
-}
 
 @Component({
   selector: 'main-content',
@@ -14,59 +8,15 @@ interface IStudent {
 })
 export class MainContentComponent implements OnInit {
 
-  students: Array<IStudent> = [];
   private scold: string;
 
   constructor() {
     this.scold = "Getting closer";
-    // this.students[0] = {
-    //   id: 1,
-    //   firstName: 'Eric',
-    //   lastName: 'Rodriguez',
-    //   course: 'Programming'
-    // }
-    // this.students[1] = {
-    //   id: 1,
-    //   firstName: 'Tom',
-    //   lastName: 'Brady',
-    //   course: 'Swimming'
-    // }
-    // this.students[2] = {
-    //   id: 1,
-    //   firstName: 'Mark',
-    //   lastName: 'Zuck',
-    //   course: 'Business'
-    // }
-    // this.students[3] = {
-    //   id: 1,
-    //   firstName: 'Joe',
-    //   lastName: 'Biden',
-    //   course: 'Politics'
-    // }
+  
   }
-  showTease() {
-    const haha = document.getElementById('haha');
-    haha.innerHTML = 'Not here my dude.' + ' ' + this.scold + '.'
-  }
-  hideTease() {
-    const haha = document.getElementById('haha');
-    haha.innerHTML = 'r2c3';
-  }
-
-
-
+  
   ngOnInit() {
   }
 
-  addStudent() {
-    const student: IStudent= {
-      id: 1,
-      firstName: 'Mike',
-      lastName: 'Tyson',
-      course: 'Boxing'
-    };
-      
-    
-    this.students.push(student);
-  }
+  
 }
