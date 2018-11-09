@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 6fr 2fr;
     background-color: #FFF;
-    height: 80%;
+    height: 100%;
     width: 80%;
+    margin: 0px auto;
 
   }
 .table-one{

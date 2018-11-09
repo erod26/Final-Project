@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'main-header',
   templateUrl: './main-header.component.html',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  private firstName: string;
-  private lastName: string;
+  // private firstName: string;
+  // private lastName: string;
 
   constructor() {
-    this.firstName = "Eric";
-    this.lastName = "Rodriguez";
+    // this.firstName = "Eric";
+    // this.lastName = "Rodriguez";
   }
 
 
