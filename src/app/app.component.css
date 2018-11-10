@@ -30,3 +30,8 @@
   color: #FFF;
 
 } */
+
+.background {
+  background-image: url(haklok.jpeg);
+  background-position: 100% 100%;
+}
