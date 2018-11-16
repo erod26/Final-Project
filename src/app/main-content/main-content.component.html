@@ -1,15 +1,15 @@
 <div class="main-container-grid">
   <div>
-    <textarea class='autoExpand align-center' rows='3' data-min-rows='3' placeholder='Place text to be converted...'></textarea>
+    <textarea [(ngModel)]="input" class='autoExpand align-center' rows='3' data-min-rows='3' placeholder='Place text to be converted...'></textarea>
   </div>
   <div class="btn-wrapper">
     <div class="btn-wrapper__container">
       <div class="btn-inner">
-        <a class="btn-inner__text" href="#">Convert!</a>
+        <a class="btn-inner__text" href="#" (click)="goConvert(input)">Convert!</a>
       </div>
     </div>
   </div>
-  <div><textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='' readonly></textarea></div>
+  <div><textarea [(ngModel)]="output" class='autoExpand' rows='3' data-min-rows='3' placeholder='' readonly></textarea></div>
 </div>
 
 

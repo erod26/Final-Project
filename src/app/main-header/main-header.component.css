@@ -6,6 +6,10 @@ grid-template-columns: 1fr 6fr 2fr;
 height: 100%;
 }
 
+.align-center {
+  align-content: center
+}
+
 /* cool menu*/
 
 body{
@@ -15,6 +19,7 @@ body{
 h2{
   margin:0px;
   text-transform: uppercase;
+  color: rgb(171, 238, 171);
 }
 
 h6{
@@ -25,6 +30,7 @@ h6{
 .wrapper{
   text-align:center;
   margin:50px auto;
+  color: #8200f4
 }
 
 .tabs{

@@ -8,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
-  private scold: string;
+  // private scold: string;
+  private input: string = '';
+  private output: string = '';
 
   constructor() {
-    this.scold = "Getting closer";
+    // this.scold = "Getting closer";
   
   }
   
+
   ngOnInit() {
   }
 
+  goConvert(input: string) {
+    console.log('This was a success', input);
+    this.output = input; 
+
+  }
   
 }

@@ -3,4 +3,9 @@
 display: grid;
 grid-template-columns: 1fr 6fr 2fr;
 height: 40%;
+color: #FFF;
+}
+
+.centerText {
+    align-items: center    
 }
