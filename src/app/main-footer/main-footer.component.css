@@ -1,5 +1,4 @@
 .main-footer {
-/* background-color: #FFF; */
 display: grid;
 grid-template-columns: 1fr 6fr 2fr;
 height: 40%;

@@ -8,13 +8,19 @@
       <!-- Click on tabs to see them in action! 
       WARNING: NOT A SUBSTITUE FOR PERSONAL PASSWORDS! -->
     </h6>
+
+
+    
     <nav class="tabs">
       <div class="selector"></div>
-      <!-- <a href="#" class="active"><i class="fas fa-burn"></i>Avengers</a>
-      <a href="#"><i class="fas fa-bomb"></i>Guardians of The Galaxy</a> -->
-      <a href="#"><i class="fas fa-bolt"></i>ROT13</a>
-      <a href="#"><i class="fab fa-superpowers"></i>Decode</a>
+      <a href="#" class="active"  (click)="showAbout()" ><i class="fas fa-burn"></i>About</a>
+      <a href="#"  (click)="goToGame()"><i class="fas fa-bomb"></i>Bored?</a>
+      <a href="#" (click)="goHome()"><i class="fas fa-bolt"></i>ROT13</a>
+      <!-- <a href="#"><i class="fab fa-superpowers"></i>Decode</a> -->
     </nav>
+
+
+
   </div>
   
 </header>

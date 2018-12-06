@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastService } from '../toast/toast.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,17 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  // private firstName: string;
-  // private lastName: string;
-
-  constructor() {
-    // this.firstName = "Eric";
-    // this.lastName = "Rodriguez";
+  constructor(private router: Router, private toastService: ToastService) {
   }
-
-
-
+  
   ngOnInit() {
   }
 
+  showAbout() {
+    this.toastService.showToast('info', 3000, 'This application was designed by Eric, Miguel, Marissa, and Luis.')
+    console.log ('toast --->', this.showAbout)
+  }
+
+  goToGame() {
+    console.log('Does it work?')
+    this.router.navigate(['game']);
+  }
+
+  goHome() {
+    console.log('Going Home')
+    this.router.navigate(['main']);
+  }
 }
