@@ -1,0 +1,107 @@
+.main-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    height: 100%;
+    width: 80%;
+    margin: 0px auto;
+
+  }
+.table-one{
+  width: 100%;
+  border: 1px solid #FFF
+}
+
+.table-one > tbody > tr > td {
+  border: 1px solid #FFF;
+  min-height: 50px;
+  padding: .5em; 
+  
+}
+.add-button {
+  font-size: bold; 
+}
+
+/* Convert Button */
+html, body {
+  height: 30%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://image.ibb.co/icbLMF/ep_naturalblack.png");
+}
+
+.btn-wrapper {
+  width: 150px;
+  height: 110px;
+  position: relative;
+  margin: 40px auto 0;
+}
+.btn-wrapper:hover .btn-inner {
+  top: -4px;
+  transform: scale(1, 1);
+  cursor: pointer;
+}
+.btn-wrapper__container {
+  border-bottom: 2px solid #15B5E2;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+}
+.btn-wrapper__container:before, .btn-wrapper__container:after {
+  border-bottom: 2px solid #15B5E2;
+  width: 96%;
+  left: 2%;
+  bottom: -8px;
+  content: "";
+  position: absolute;
+}
+.btn-wrapper__container:after {
+  width: 92%;
+  left: 4%;
+  bottom: -14px;
+}
+.btn-wrapper__container .btn-inner {
+  width: 104.2%;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: -2.1%;
+  border: 2px solid #15B5E2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: #10131C;
+  transform: scale(0.96, 0.96);
+  transition: all .3s;
+  z-index: 4;
+}
+.btn-wrapper__container .btn-inner__text {
+  text-decoration: none;
+  color: #15B5E2;
+}
+
+/*Text boxes */
+
+body{ background:#728EB2; }
+
+textarea{  
+  display:block;
+  box-sizing: padding-box;
+  overflow:hidden;
+
+  padding:10px;
+  width:250px;
+  font-size:14px;
+  margin:50px auto;
+  border-radius:8px;
+  border:6px solid #556677;
+}

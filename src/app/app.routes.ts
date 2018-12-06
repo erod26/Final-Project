@@ -1,15 +1,18 @@
 import { Routes, RouterModule } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
-import { GameComponent } from './game/game.component';
+import { Rot14Component } from './rot14/rot14.component';
 
 const appRoutes: Routes = [
   {
-    path: 'main',
+    path: '',
     component: MainContentComponent
   }, {
-    path: 'game',
-    component: GameComponent
-  }, 
+    path: 'second',
+    component: Rot14Component
+  }, {
+    path: 'main',
+    component: MainContentComponent
+  }
 ];
 
 export const AppRoutes = RouterModule.forRoot(appRoutes);

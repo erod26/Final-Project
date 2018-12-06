@@ -3,6 +3,7 @@ import { ToastService } from '../toast/toast.service';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'main-header',
   templateUrl: './main-header.component.html',
@@ -21,9 +22,9 @@ export class MainHeaderComponent implements OnInit {
     console.log ('toast --->', this.showAbout)
   }
 
-  goToGame() {
+  goToSec() {
     console.log('Does it work?')
-    this.router.navigate(['game']);
+    this.router.navigate(['second']);
   }
 
   goHome() {
